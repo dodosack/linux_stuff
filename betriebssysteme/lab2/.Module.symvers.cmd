@@ -1,0 +1,1 @@
+savedcmd_/home/dudel/betriebssysteme/lab2/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/dudel/betriebssysteme/lab2/Module.symvers -T /home/dudel/betriebssysteme/lab2/modules.order -i Module.symvers -e 
