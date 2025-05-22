@@ -12,7 +12,7 @@ for PROG in "$SERVER_PATH" "$CLIENT_PATH"; do
   if [[ ! -x "$PROG" ]]; then
     echo "Error: $PROG nicht gefunden oder nicht ausführbar."
     exit 1
-  fi
+  fi 
 done
 
 open_two_windows() {

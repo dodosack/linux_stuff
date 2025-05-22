@@ -10,7 +10,7 @@
 #include <sys/socket.h> // socket(), bind()...
 #include <sys/un.h>
 #include <string.h>
-
+w
 #include <pthread.h>
 pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER; // initilize mutex
 
@@ -28,6 +28,7 @@ void cleanup_exit_succes(int signum)
   close(server_fd);
   unlink(SOCKET_PATH);
   pthread_mutex_destroy(&lock); // cleanup mutex
+  // nciht im handler machen 
   unlink(FIFO_C2S);             // cleanup pipes
   unlink(FIFO_S2C);
   printf("👋 Server shut down gracefully!\n");
